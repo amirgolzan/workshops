@@ -7,7 +7,7 @@ output:
 
 
 
-Last Updates: 2023-10-19
+Last Updates: 2024-10-17
 
 ## Missing Values
 
@@ -438,13 +438,31 @@ plot(x = log(data_gapminder$gdpPercap), y = data_gapminder$lifeExp)
 ![](R_exploring-data_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
 
 
+## Test your R might
+
+Here are some examples for you to look at and challenge yourself, ensuring you now have a better understanding of today's session!
+
+Q1. You are given the following dataset of students' grades:
+
+```r
+df <- data.frame(
+  Name = c("John", "Alice", "Bob", "Alice", "Mary", "John"),
+  Math = c(85, NA, 79, NA, 93, 85),
+  Science = c(78, 88, 84, 88, NA, 78),
+  English = c(92, 90, 85, 90, 88, 92)
+)
+```
+Part A. Identify the missing values and compute how many complete cases there are in this dataset.
+
+Part B. How many duplicate rows exist, and how would you remove them?
+
+Part C. Once you’ve removed the duplicates, compute the mean Math score, handling the missing values properly.
 
 
+Q2. You have a dataset of car attributes, with columns: Horsepower, Weight, and MPG (Miles per Gallon) [To access the dataset, you can use `data(mtcars)`].
 
+Part A. Calculate the summary statistics (mean, median, and standard deviation) for each variable.
 
+Part B. Create a box plot to compare the distribution of `Horsepower` and `MPG`. What insights can you derive from the box plot?
 
-
-
-
-
-
+Part C. Create a scatter plot between `Weight` and `MPG`. Explain whether there is any relationship between these two variables and interpret the plot.
